@@ -19,7 +19,12 @@ app.get("/", function(req,res){
 
 app.post("/upload", upload.single("file"), function(req,res){
     console.log(req.file);
+    console.log("successful");
+    res.sendStatus(200);
+    
 });
+
+
 
 
 
